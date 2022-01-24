@@ -29,7 +29,7 @@ section p {
 }
 
 main {
-    max-width: 310px;
+    max-width: 300px;
     min-height: 720px;
     margin: auto;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
@@ -134,4 +134,26 @@ h3 {
     color: var(--LightGray);
 }
 
-@media (min-width:900px) {}
+@media (min-width:900px) {
+    main {
+        min-width: 640px;
+        height: 475px;
+        min-height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .top {
+        grid-column: span 2;
+        max-height: 215px;
+        min-height: auto;
+    }
+    .price,
+    .why,
+    .top {
+        padding: 35px;
+        margin: 0;
+    }
+    .why {
+        font-size: 0.9em;
+    }
+}
